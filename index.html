@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boda Karla y Rafa - Únete a Nosotros en Nuestro Día Especial</title>
 
+    <link rel="icon" href="favicon.ico" />
+    
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -1695,10 +1697,10 @@
               id="massVenueImage"
               class="venue-image"
               src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"
-              alt="Ubicación de la ceremonia"
+              alt="Ubicación de la iglesia"
               loading="lazy"
             />
-            <h3 class="detail-title">Ceremonia</h3>
+            <h3 class="detail-title">Ceremonia Religiosa</h3>
             <div class="detail-info">
               <strong id="massVenueName">Nombre de la Iglesia</strong>
               <span id="massAddress">Dirección de la Iglesia</span>
@@ -2499,8 +2501,8 @@
           },
           {
             time: "5:00 PM",
-            title: "Inicio de Ceremonia",
-            description: "Comienza la ceremonia nupcial",
+            title: "Ceremonia Religiosa",
+            description: "Comienza la Ceremonia Religiosa",
           },
           {
             time: "6:30 PM",
@@ -2750,7 +2752,7 @@
       function generateGoogleCalendarUrl() {
         const title = `Boda de ${CONFIG.bride} y ${CONFIG.groom}`;
         const location = `${CONFIG.massVenueName}, ${CONFIG.massAddress}`;
-        const details = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
+        const details = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia Religiosa: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
 
         const formatGoogleDate = (date) => {
           return date.toISOString().replace(/-|:|\.\d+/g, "");
@@ -2776,7 +2778,7 @@
       function downloadIcsFile() {
         const title = `Boda de ${CONFIG.bride} y ${CONFIG.groom}`;
         const location = `${CONFIG.receptionVenueName}, ${CONFIG.receptionAddress}`;
-        const description = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
+        const description = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia Religiosa: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
 
         const formatIcsDate = (dateString) => {
           const date = new Date(dateString);
