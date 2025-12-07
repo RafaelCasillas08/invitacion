@@ -1,0 +1,3192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Boda - Únete a Nosotros en Nuestro Día Especial</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Estás invitado a celebrar nuestro día de bodas. Únete a nosotros mientras comenzamos nuestro viaje juntos."
+    />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta
+      property="og:title"
+      content="Invitación de Boda - Únete a Nosotros en Nuestro Día Especial"
+    />
+    <meta
+      property="og:description"
+      content="Estás invitado a celebrar nuestro día de bodas. Únete a nosotros mientras comenzamos nuestro viaje juntos."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts - Playfair Display (elegant serif) and Montserrat (clean sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ============================================
+       CONFIGURATION & CSS VARIABLES
+       ============================================ */
+      :root {
+        /* Elegant Wedding Color Palette - Soft Rose Gold & Neutrals */
+        --color-primary: #d4a373;
+        --color-primary-dark: #b8865f;
+        --color-accent: #e8d5c4;
+        --color-highlight: #f4e8db;
+        --color-text-primary: #2c2c2c;
+        --color-text-secondary: #5a5a5a;
+        --color-text-tertiary: #8a8a8a;
+        --color-background: #fdfbf7;
+        --color-card-bg: #ffffff;
+        --color-border: #e8e2dc;
+        --color-whatsapp: #25d366;
+
+        /* Typography */
+        --font-display: "Playfair Display", serif;
+        --font-body: "Montserrat", sans-serif;
+
+        /* Spacing System - Mobile-First */
+        --spacing-xs: 8px;
+        --spacing-sm: 12px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+        --spacing-2xl: 48px;
+        --spacing-3xl: 64px;
+
+        /* Border Radius */
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 16px;
+        --radius-full: 9999px;
+
+        /* Shadows */
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+        --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+        --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+        /* Transitions */
+        --transition-fast: 200ms ease;
+        --transition-normal: 300ms ease;
+        --transition-slow: 500ms ease;
+      }
+
+      /* ============================================
+       RESET & BASE STYLES
+       ============================================ */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text-primary);
+        background-color: var(--color-background);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        padding-bottom: 80px;
+      }
+
+      /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-display);
+        line-height: 1.2;
+        font-weight: 600;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-md);
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      p {
+        margin-bottom: var(--spacing-md);
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+      }
+
+      /* ============================================
+       LAYOUT CONTAINERS
+       ============================================ */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+      }
+
+      section {
+        padding: var(--spacing-2xl) 0;
+      }
+
+      /* ============================================
+       STICKY NAVIGATION
+       ============================================ */
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--color-border);
+        transition: box-shadow var(--transition-normal);
+      }
+
+      .nav.scrolled {
+        box-shadow: var(--shadow-sm);
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-md) var(--spacing-md);
+        min-height: 56px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: var(--spacing-sm);
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: var(--color-text-secondary);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--radius-sm);
+        transition: all var(--transition-fast);
+        white-space: nowrap;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus {
+        color: var(--color-primary);
+        background-color: var(--color-accent);
+      }
+
+      /* ============================================
+       HERO SECTION - SIMPLIFIED
+       ============================================ */
+      .hero {
+        position: relative;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        padding: var(--spacing-xl) 0;
+      }
+
+      .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.6) 100%
+        );
+        z-index: -1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        animation: fadeInUp 1s var(--transition-slow);
+      }
+
+      .hero-date {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: var(--spacing-lg);
+        opacity: 0.95;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      .hero-names {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: var(--spacing-2xl);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+      }
+
+      /* NEW COUNTDOWN DESIGN - With vertical separators */
+      .countdown {
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        margin: var(--spacing-xl) auto;
+        /* background: rgba(255, 255, 255, 0.1); */
+        /* backdrop-filter: blur(10px); */
+        /* -webkit-backdrop-filter: blur(10px); */
+        border-radius: var(--radius-md);
+        padding: var(--spacing-lg) var(--spacing-md);
+        max-width: 400px;
+      }
+
+      .countdown-item {
+        flex: 1;
+        text-align: center;
+        position: relative;
+      }
+
+      .countdown-item:not(:last-child)::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 2rem;
+        font-weight: 300;
+      }
+
+      .countdown-value {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: var(--font-display);
+        line-height: 1;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .countdown-label {
+        display: block;
+        font-size: 0.7rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        opacity: 0.9;
+      }
+
+      .countdown-message {
+        font-size: 1.5rem;
+        font-family: var(--font-display);
+        padding: var(--spacing-lg);
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: var(--radius-md);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* ============================================
+       FLOATING MUSIC BUTTON
+       ============================================ */
+      .music-button {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        z-index: 998;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #ffffff;
+        border: none;
+        box-shadow: var(--shadow-lg);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-normal);
+      }
+
+      .music-button:hover {
+        transform: scale(1.1);
+        background-color: var(--color-primary-dark);
+        box-shadow: 0 8px 30px rgba(212, 163, 115, 0.4);
+      }
+
+      .music-button:active {
+        transform: scale(0.95);
+      }
+
+      .music-button svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+
+      .music-button.playing {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: var(--shadow-lg);
+        }
+        50% {
+          box-shadow: 0 8px 30px rgba(212, 163, 115, 0.6);
+        }
+      }
+
+      /* Floating RSVP Button - Desktop only */
+      .floating-rsvp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 998;
+        height: 56px;
+        padding: 0 var(--spacing-lg);
+        border-radius: var(--radius-full);
+        background-color: var(--color-primary);
+        color: #ffffff;
+        border: none;
+        box-shadow: var(--shadow-lg);
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-normal);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .floating-rsvp-button:hover {
+        transform: scale(1.05);
+        background-color: var(--color-primary-dark);
+        box-shadow: 0 8px 30px rgba(212, 163, 115, 0.4);
+      }
+
+      .floating-rsvp-button:active {
+        transform: scale(0.98);
+      }
+
+      /* Show floating RSVP on desktop, hide on mobile */
+      @media (min-width: 768px) {
+        .music-button {
+          bottom: 90px;
+        }
+
+        .floating-rsvp-button {
+          display: flex;
+          bottom: 20px;
+        }
+
+        /* Hide sticky RSVP on desktop */
+        .sticky-rsvp {
+          display: none;
+        }
+
+        body {
+          padding-bottom: 0;
+        }
+      }
+
+      /* ============================================
+       BUTTONS
+       ============================================ */
+      .btn {
+        display: inline-block;
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: var(--radius-full);
+        transition: all var(--transition-normal);
+        cursor: pointer;
+        border: none;
+        font-family: var(--font-body);
+        min-height: 48px;
+        min-width: 120px;
+        text-align: center;
+        box-shadow: var(--shadow-sm);
+        line-height: 1.5;
+      }
+
+      .btn-primary {
+        background-color: var(--color-primary);
+        color: #ffffff;
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn:disabled,
+      .btn-primary:disabled {
+        background-color: var(--color-border);
+        color: var(--color-text-tertiary);
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      .btn:disabled:hover,
+      .btn-primary:disabled:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .btn-secondary {
+        background-color: var(--color-accent);
+        color: var(--color-text-primary);
+        border: 1px solid var(--color-border);
+      }
+
+      .btn-secondary:hover,
+      .btn-secondary:focus {
+        background-color: var(--color-primary);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn-whatsapp {
+        background-color: var(--color-primary);
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1.125rem;
+        min-height: 56px;
+      }
+
+      /* STICKY RSVP BUTTON AT BOTTOM - MOBILE OPTIMIZED */
+      .sticky-rsvp {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        padding: var(--spacing-sm) var(--spacing-md);
+      }
+
+      .sticky-rsvp .btn {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+      }
+
+      /* ============================================
+       STORY SECTION - SIMPLIFIED
+       ============================================ */
+      .story {
+        background-color: var(--color-card-bg);
+      }
+
+      .story-container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .story-image-circle {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto var(--spacing-xl);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid var(--color-accent);
+        box-shadow: var(--shadow-lg);
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all var(--transition-slow);
+      }
+
+      .story-image-circle.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .story-image-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .story-message {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-style: italic;
+        color: var(--color-text-primary);
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all var(--transition-slow);
+      }
+
+      .story-message.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ============================================
+       SECTION HEADERS
+       ============================================ */
+      .section-header {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .section-subtitle {
+        font-size: 1rem;
+        color: var(--color-text-tertiary);
+        font-weight: 300;
+      }
+
+      /* ============================================
+       EVENT DETAILS CARDS
+       ============================================ */
+      .details-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+      }
+
+      .detail-card {
+        background-color: var(--color-card-bg);
+        border-radius: var(--radius-md);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--color-border);
+        text-align: center;
+        transition: all var(--transition-normal);
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .detail-card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .detail-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+      }
+
+      .venue-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: var(--radius-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .detail-icon {
+        font-size: 2.5rem;
+        color: var(--color-primary);
+      }
+
+      .dresscode-icon {
+        height: 110px;
+        margin: 0 auto var(--spacing-md);
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+        clip-path: inset(0% 0% 10% 0%);
+        transform: scale(1.05);
+      }
+
+      .detail-title {
+        font-size: 1.25rem;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-md);
+        font-family: var(--font-display);
+      }
+
+      .detail-info {
+        font-size: 0.875rem;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+        margin-bottom: var(--spacing-md);
+      }
+
+      .detail-info strong {
+        display: block;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-xs);
+        font-size: 1rem;
+      }
+
+      /* ============================================
+       ICON-BASED NOTICE CARDS (Like reference image)
+       ============================================ */
+      .notice-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .notice-card {
+        background-color: var(--color-card-bg);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-xl);
+        text-align: center;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--color-border);
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all var(--transition-slow);
+      }
+
+      .notice-card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .notice-icon-circle,
+      .notice-icon-circle-2 {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto var(--spacing-lg);
+        border-radius: 50%;
+        background-color: var(--color-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid #ffffff;
+        box-shadow: var(--shadow-md);
+      }
+
+      .notice-icon-circle svg,
+      .notice-icon-circle img {
+        width: 60px;
+        height: 60px;
+        color: var(--color-primary-dark);
+        fill: var(--color-primary-dark);
+      }
+
+      .notice-icon-circle-2 svg,
+      .notice-icon-circle-2 img {
+        width: 90px;
+        height: 90px;
+        color: var(--color-primary-dark);
+        fill: var(--color-primary-dark);
+      }
+
+      .notice-card-title {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-md);
+        font-style: italic;
+      }
+
+      .notice-card-text {
+        font-size: 0.95rem;
+        color: var(--color-text-secondary);
+        line-height: 1.7;
+        margin-bottom: 0;
+      }
+
+      /* ============================================
+       BACKGROUND IMAGE SECTION (Before Timeline)
+       ============================================ */
+      .image-overlay-section {
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        margin: var(--spacing-3xl) 0;
+      }
+
+      .image-overlay-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+      }
+
+      .image-overlay-dark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+
+      .image-overlay-content {
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        padding: var(--spacing-xl);
+        max-width: 700px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all var(--transition-slow);
+      }
+
+      .image-overlay-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .image-overlay-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .image-overlay-content p {
+        font-size: 1.125rem;
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ============================================
+       TIMELINE
+       ============================================ */
+      .timeline {
+        max-width: 600px;
+        margin: var(--spacing-xl) auto 0;
+        position: relative;
+        padding-left: var(--spacing-xl);
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(
+          to bottom,
+          var(--color-primary),
+          var(--color-accent)
+        );
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: var(--spacing-xl);
+        padding-left: var(--spacing-lg);
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all var(--transition-slow);
+      }
+
+      .timeline-item.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -26px;
+        top: 4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        border: 3px solid var(--color-background);
+        box-shadow: 0 0 0 3px var(--color-accent);
+      }
+
+      .timeline-time {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .timeline-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-xs);
+        font-family: var(--font-display);
+      }
+
+      .timeline-description {
+        font-size: 0.875rem;
+        color: var(--color-text-secondary);
+      }
+
+      /* ============================================
+       PHOTO GALLERY
+       ============================================ */
+      .gallery {
+        background-color: var(--color-card-bg);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-xl);
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius-sm);
+        aspect-ratio: 3/4;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all var(--transition-normal);
+      }
+
+      .gallery-item.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform var(--transition-slow);
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+      /* Modal simple para imágenes */
+      #imageModal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+      }
+
+      #imageModal.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #imageModal img {
+        max-width: 90%;
+        max-height: 90vh;
+        object-fit: contain;
+      }
+
+      /* ============================================
+       LODGING SECTION
+       ============================================ */
+      .lodging-list {
+        max-width: 800px;
+        margin: var(--spacing-xl) auto 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+      }
+
+      .lodging-item {
+        background-color: var(--color-card-bg);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        padding: var(--spacing-lg);
+        box-shadow: var(--shadow-sm);
+        transition: all var(--transition-normal);
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      .lodging-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .lodging-item:hover {
+        box-shadow: var(--shadow-md);
+      }
+
+      .lodging-name {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .lodging-location,
+      .lodging-phone {
+        font-size: 0.875rem;
+        color: var(--color-text-secondary);
+        margin-bottom: var(--spacing-sm);
+        display: flex;
+        align-items: center;
+      }
+
+      .lodging-location svg,
+      .lodging-phone svg {
+        flex-shrink: 0;
+        color: var(--color-primary);
+      }
+
+      .lodging-link {
+        color: var(--color-primary);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: color var(--transition-fast);
+      }
+
+      .lodging-link:hover {
+        color: var(--color-primary-dark);
+        text-decoration: underline;
+      }
+
+      /* ============================================
+       GIFTS SECTION
+       ============================================ */
+      .gifts-content {
+        max-width: 700px;
+        margin: var(--spacing-xl) auto 0;
+        text-align: center;
+      }
+
+      .account-number {
+        display: inline-block;
+        background-color: var(--color-card-bg);
+        border: 2px solid var(--color-primary);
+        border-radius: var(--radius-sm);
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: var(--font-body);
+        color: var(--color-text-primary);
+        letter-spacing: 2px;
+        margin: var(--spacing-md) 0;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+      }
+
+      .account-number:hover {
+        background-color: var(--color-accent);
+        transform: scale(1.02);
+      }
+
+      /* ============================================
+       GIFTS SECTION - BANK ACCOUNTS
+       ============================================ */
+      .gifts-content {
+        max-width: 900px;
+        margin: var(--spacing-xl) auto 0;
+        text-align: center;
+      }
+
+      .bank-accounts-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        margin: var(--spacing-xl) 0;
+      }
+
+      @media (min-width: 768px) {
+        .bank-accounts-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .bank-account-card {
+        background-color: var(--color-background);
+        border: 2px solid var(--color-border);
+        border-radius: var(--radius-md);
+        padding: var(--spacing-lg);
+        text-align: left;
+        transition: all var(--transition-normal);
+      }
+
+      .bank-account-card:hover {
+        border-color: var(--color-primary);
+        box-shadow: var(--shadow-md);
+      }
+
+      .account-holder-name {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-xs);
+        font-family: var(--font-display);
+      }
+
+      .bank-name {
+        font-size: 0.875rem;
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-sm);
+        font-weight: 600;
+      }
+
+      .clabe-section {
+        background-color: var(--color-card-bg);
+        border-radius: var(--radius-sm);
+        padding: var(--spacing-sm) var(--spacing-md);
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .clabe-label {
+        font-size: 0.7rem;
+        color: var(--color-text-tertiary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+      }
+
+      .clabe-row {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+      }
+
+      .clabe-number {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        font-family: "Courier New", monospace;
+        letter-spacing: 0.5px;
+        word-break: break-all;
+        flex: 1;
+      }
+
+      .copy-icon-button {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        color: var(--color-primary);
+      }
+
+      .copy-icon-button:hover {
+        transform: scale(1.05);
+      }
+
+      .copy-icon-button:active {
+        transform: scale(0.95);
+      }
+
+      .copy-icon-button.copied {
+        background-color: #4caf50;
+        border-color: #4caf50;
+        border-radius: var(--radius-sm);
+        color: #ffffff;
+      }
+
+      .copy-icon-button svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ============================================
+       RSVP FORM STYLES
+       ============================================ */
+      .guest-greeting {
+        background-color: var(--color-accent);
+        border-left: 4px solid var(--color-primary);
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-sm);
+        margin-bottom: var(--spacing-xl);
+        text-align: left;
+      }
+
+      .greeting-text {
+        font-size: 1.25rem;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .tickets-info {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        margin-bottom: 0;
+      }
+
+      .error-message {
+        background-color: #fee;
+        border-left: 4px solid #c33;
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-sm);
+        margin-bottom: var(--spacing-xl);
+        color: #c33;
+      }
+
+      .error-message p {
+        margin: 0;
+        color: #c33;
+      }
+
+      .rsvp-form {
+        max-width: 500px;
+        margin: var(--spacing-xl) auto 0;
+      }
+
+      .form-group {
+        margin-bottom: var(--spacing-lg);
+        text-align: left;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .form-select {
+        width: 100%;
+        padding: var(--spacing-md);
+        font-size: 1rem;
+        font-family: var(--font-body);
+        color: var(--color-text-primary);
+        background-color: var(--color-card-bg);
+        border: 2px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        transition: all var(--transition-fast);
+        cursor: pointer;
+        min-height: 48px;
+      }
+
+      .form-select:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.1);
+      }
+
+      .form-select:hover {
+        border-color: var(--color-primary);
+      }
+
+      .rsvp-form .btn-primary {
+        width: 100%;
+        margin-top: var(--spacing-md);
+      }
+
+      .loading-state {
+        text-align: center;
+        padding: var(--spacing-lg);
+        color: var(--color-text-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-sm);
+      }
+
+      .loading-spinner {
+        width: 20px;
+        height: 20px;
+        border: 3px solid var(--color-border);
+        border-top-color: var(--color-primary);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .success-message {
+        text-align: center;
+        padding: var(--spacing-2xl);
+        background-color: var(--color-accent);
+        border-radius: var(--radius-md);
+        max-width: 500px;
+        margin: var(--spacing-xl) auto 0;
+      }
+
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto var(--spacing-lg);
+        background-color: #4caf50;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .success-message h3 {
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .success-message p {
+        color: var(--color-text-secondary);
+        margin-bottom: 0;
+      }
+
+      /* ============================================
+       RSVP SECTION
+       ============================================ */
+      .rsvp {
+        text-align: center;
+        padding: var(--spacing-3xl) 0;
+      }
+
+      .rsvp-content {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .rsvp-text {
+        font-size: 1.125rem;
+        margin-bottom: var(--spacing-xl);
+        color: var(--color-text-secondary);
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+        margin-top: var(--spacing-xl);
+      }
+
+      /* WhatsApp & Calendar Icons */
+      .whatsapp-icon,
+      .calendar-icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      /* ============================================
+       FOOTER
+       ============================================ */
+      .footer {
+        background-color: var(--color-text-primary);
+        color: #ffffff;
+        text-align: center;
+        padding: var(--spacing-xl) 0;
+      }
+
+      .footer-names {
+        font-size: 1.125rem;
+        font-family: var(--font-display);
+        margin-bottom: var(--spacing-xs);
+        color: #ffffff;
+        opacity: 0.9;
+      }
+
+      .footer-heart {
+        color: var(--color-primary);
+        margin: 0 var(--spacing-xs);
+      }
+
+      .footer-copyright {
+        color: #ffffff;
+        font-size: 0.75rem;
+        opacity: 0.7;
+        margin-top: var(--spacing-sm);
+      }
+
+      /* ============================================
+       ANIMATIONS
+       ============================================ */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ============================================
+       RESPONSIVE - TABLET & DESKTOP
+       ============================================ */
+      @media (min-width: 768px) {
+        html {
+          font-size: 18px;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        section {
+          padding: var(--spacing-3xl) 0;
+        }
+
+        .nav-links {
+          gap: var(--spacing-lg);
+        }
+
+        .nav-link {
+          font-size: 1rem;
+        }
+
+        .hero-names {
+          font-size: 4rem;
+        }
+
+        .hero-date {
+          font-size: 1.25rem;
+        }
+
+        .countdown {
+          max-width: 500px;
+          padding: var(--spacing-xl) var(--spacing-lg);
+        }
+
+        .countdown-value {
+          font-size: 3rem;
+        }
+
+        .story-image-circle {
+          width: 350px;
+          height: 350px;
+        }
+
+        .details-cards {
+          grid-template-columns: repeat(2, 1fr);
+          gap: var(--spacing-xl);
+        }
+
+        .notice-cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: var(--spacing-md);
+        }
+
+        .lodging-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .button-group {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        .timeline {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .timeline::before {
+          left: 50%;
+          transform: translateX(-1px);
+        }
+
+        .timeline-item {
+          width: 50%;
+          padding-left: 0;
+          padding-right: var(--spacing-xl);
+        }
+
+        .timeline-item:nth-child(even) {
+          margin-left: 50%;
+          padding-right: 0;
+          padding-left: var(--spacing-xl);
+        }
+
+        .timeline-item::before {
+          left: auto;
+          right: -8px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+          right: auto;
+          left: -8px;
+        }
+
+        /* Hide sticky button on desktop */
+        .sticky-rsvp {
+          display: none;
+        }
+
+        body {
+          padding-bottom: 0;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .details-cards {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      /* ============================================
+       UTILITY CLASSES
+       ============================================ */
+      .hidden {
+        display: none !important;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .mb-0 {
+        margin-bottom: 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================
+       STICKY NAVIGATION
+       ============================================ -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" onclick="scrollToSection('details')"
+              >Detalles</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" onclick="scrollToSection('timeline-section')"
+              >Itinerario</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" onclick="scrollToSection('lodging')"
+              >Hospedaje</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============================================
+       HERO SECTION - SIMPLIFIED (Date, Names, Countdown)
+       ============================================ -->
+    <section class="hero" id="hero">
+      <img
+        src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/20.jpeg"
+        alt="Wedding background"
+        class="hero-background"
+        loading="eager"
+      />
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <p class="hero-date" id="heroDate">June 15, 2025</p>
+        <h1 class="hero-names" id="heroNames">Bride & Groom</h1>
+
+        <!-- NEW Countdown Timer with vertical separators -->
+        <div id="countdown" class="countdown"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       OUR STORY SECTION - SIMPLIFIED (Circle Image + Love Message)
+       ============================================ -->
+    <section class="story" id="story">
+      <div class="container">
+        <div class="story-container">
+          <div class="story-image-circle animate-on-scroll">
+            <!-- src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80" -->
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/1.jpg"
+              alt="Nuestra historia de amor"
+              loading="lazy"
+            />
+          </div>
+
+          <p class="story-message animate-on-scroll">
+            "Dos corazones, un amor, para siempre juntos"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       EVENT DETAILS SECTION
+       ============================================ -->
+    <section class="details" id="details">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Detalles del Evento</h2>
+        </div>
+
+        <div class="details-cards">
+          <!-- When Card WITH "Add to Calendar" button -->
+          <div class="detail-card animate-on-scroll">
+            <!-- <div class="detail-icon">📅</div> -->
+            <div class="detail-icon">
+              <svg
+                viewBox="0 0 64 64"
+                xmlns="https://www.w3.org/2000/svg"
+                style="width: 60px; height: 60px"
+              >
+                <!-- Calendar outline -->
+                <rect
+                  x="8"
+                  y="12"
+                  width="48"
+                  height="44"
+                  rx="4"
+                  ry="4"
+                  fill="#ffffff"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <!-- Calendar header bar -->
+                <rect
+                  x="8"
+                  y="12"
+                  width="48"
+                  height="14"
+                  rx="4"
+                  ry="4"
+                  fill="currentColor"
+                />
+                <rect x="8" y="20" width="48" height="6" fill="currentColor" />
+                <!-- Calendar rings -->
+                <circle cx="18" cy="10" r="2" fill="currentColor" />
+                <circle cx="46" cy="10" r="2" fill="currentColor" />
+                <!-- Month text (FEB) -->
+                <text
+                  x="32"
+                  y="20"
+                  font-size="8"
+                  font-weight="bold"
+                  fill="#ffffff"
+                  text-anchor="middle"
+                  font-family="Arial, sans-serif"
+                >
+                  FEB
+                </text>
+                <!-- Day number (7) -->
+                <text
+                  x="32"
+                  y="46"
+                  font-size="20"
+                  font-weight="bold"
+                  fill="currentColor"
+                  text-anchor="middle"
+                  font-family="Arial, sans-serif"
+                >
+                  7
+                </text>
+              </svg>
+            </div>
+            <h3 class="detail-title">Cuándo</h3>
+            <div class="detail-info">
+              <strong id="detailDate">Sábado, 15 de Junio, 2025</strong>
+              <span id="detailTime">4:00 PM - 11:00 PM</span>
+            </div>
+            <button
+              id="addToCalendarBtn"
+              class="btn btn-secondary"
+              style="display: flex; align-items: center; margin: auto"
+            >
+              <svg
+                class="calendar-icon"
+                viewBox="0 0 24 24"
+                xmlns="https://www.w3.org/2000/svg"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"
+                />
+              </svg>
+              Agregar al Calendario
+            </button>
+          </div>
+
+          <!-- Mass/Ceremony Location Card -->
+          <div class="detail-card animate-on-scroll">
+            <img
+              id="massVenueImage"
+              class="venue-image"
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"
+              alt="Ubicación de la ceremonia"
+              loading="lazy"
+            />
+            <h3 class="detail-title">Ceremonia</h3>
+            <div class="detail-info">
+              <strong id="massVenueName">Nombre de la Iglesia</strong>
+              <span id="massAddress">Dirección de la Iglesia</span>
+            </div>
+            <a
+              href="#"
+              id="massMapsLink"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir en Maps
+            </a>
+          </div>
+
+          <!-- Reception Location Card -->
+          <div class="detail-card animate-on-scroll">
+            <img
+              id="receptionVenueImage"
+              class="venue-image"
+              src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80"
+              alt="Ubicación de la recepción"
+              loading="lazy"
+            />
+            <h3 class="detail-title">Recepción</h3>
+            <div class="detail-info">
+              <strong id="receptionVenueName">Lugar de Recepción</strong>
+              <span id="receptionAddress">Dirección de Recepción</span>
+            </div>
+            <a
+              href="#"
+              id="receptionMapsLink"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir en Maps
+            </a>
+          </div>
+
+          <!-- Dress Code Card -->
+          <div class="detail-card animate-on-scroll">
+            <img
+              id="dressCodeIcon"
+              class="dresscode-icon"
+              src="https://www.shutterstock.com/image-illustration/dress-suit-icon-isolated-on-260nw-1055797397.jpg"
+              alt="Código de vestimenta formal"
+              loading="lazy"
+            />
+            <h3 class="detail-title">Código de Vestimenta</h3>
+            <div class="detail-info">
+              <strong id="dressCodeTitle">Formal / Etiqueta</strong>
+              <span
+                >Te invitamos a vestir elegante para la ocasión, evita colores
+                beige o blancos</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       ICON-BASED NOTICE CARDS (RSVP, No Children, Punctuality)
+       ============================================ -->
+    <section
+      style="
+        padding: var(--spacing-3xl) 0;
+        background-color: var(--color-card-bg);
+      "
+    >
+      <div class="container">
+        <div class="notice-cards">
+          <!-- RSVP Deadline Notice -->
+          <div class="notice-card animate-on-scroll">
+            <div class="notice-icon-circle">
+              <svg viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </div>
+            <h3 class="notice-card-title">Asistencia</h3>
+            <p class="notice-card-text" id="rsvpDeadlineText">
+              Please confirm your attendance before December 15
+            </p>
+          </div>
+
+          <!-- No Children Notice -->
+          <div class="notice-card animate-on-scroll">
+            <div class="notice-icon-circle">
+              <svg
+                xmlns="https://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 358.44"
+              >
+                <path
+                  fill-rule="nonzero"
+                  d="M354.96 139.89c6.72 0 12.18 5.45 12.18 12.17 0 6.73-5.46 12.18-12.18 12.18-6.73 0-12.18-5.45-12.18-12.18 0-6.72 5.45-12.17 12.18-12.17zm14.87 77.56a5.745 5.745 0 0 1-1.44-8c1.81-2.61 5.4-3.25 8.01-1.44 5.84 4.07 11.58 6.08 17.19 6.07 5.63-.01 11.38-2.04 17.22-6.07 2.61-1.8 6.19-1.15 7.98 1.46a5.733 5.733 0 0 1-1.46 7.98c-7.8 5.37-15.71 8.09-23.74 8.1-8.03.01-15.96-2.67-23.76-8.1zm65.06-77.56c6.72 0 12.17 5.45 12.17 12.17 0 6.73-5.45 12.18-12.17 12.18-6.73 0-12.18-5.45-12.18-12.18 0-6.72 5.45-12.17 12.18-12.17zM279.17 358.44c9.77-35.13 22.63-45.77 48.8-67.4 3.96-3.28 8.24-6.82 12.35-10.3.08-.07.17-.13.25-.2.92-1.19 1.55-1.98 2.14-2.74 3.05-3.88 5.58-7.09 7.61-11.37-12.89-6.9-24.89-17.23-35.15-31.22-7.69 1.93-14.21 3.64-19.67 5.06-5.3 1.39-9.64 2.53-12.78 3.28-1.82.43-3.13.84-4.99.11-2.15-.86-3.67-3-3.61-5.47l3.29-127.63c0-.21 0-.42.02-.63.82-8.22 2.68-16.13 5.46-23.77 2.79-7.65 6.48-14.99 10.96-22.04 12.17-19.14 27.33-32.76 45.18-41.47 17.72-8.65 38.01-12.39 60.55-11.83 19.37.47 38.13 5.28 54.82 14.85 15.59 8.94 29.37 22.03 40.12 39.61 3.97 6.49 7.39 13.31 10.28 20.45 2.84 7.02 5.15 14.31 6.96 21.86.15.52.23 1.07.23 1.64l-.01 122.51c0 1.8.19 3.47-.75 5.09-1.92 3.33-7.09 4.14-9.69.44-2.6-3.7-5.97-6.81-9.95-9.4-3.01-1.96-6.4-3.63-10.1-5.06-11.91 19.37-27.49 33.85-44.72 42.96 1.55 4.48 3.7 7.88 6.37 12.09l1.15 1.82c9.07 4.11 17.93 9.35 26.29 17.07 8.67 8 16.74 18.57 23.85 33.17 4.56 9.35 8.01 18.88 10.91 28.52H493.3c-2.54-8.01-5.5-15.86-9.21-23.48-6.44-13.22-13.63-22.69-21.29-29.76-6.38-5.88-13.15-10.16-20.13-13.58a65.03 65.03 0 0 1-15.1 13.72c-10.69 7-23.15 10.62-35.59 10.65-12.47.03-24.92-3.55-35.55-10.93a61.876 61.876 0 0 1-5.91-4.68 71.364 71.364 0 0 1-7.26-7.1c-2.89 2.42-5.49 4.57-7.96 6.62-23.32 19.27-35.25 29.14-44.12 58.54h-12.01zM422.46 253.5c1.31-.59 2.63-1.21 3.97-1.86.17-.08.35-.15.52-.22 19.56-9.78 36.83-27.81 47.71-52.62 3.82-8.72 5.58-16.68 6.31-24.56 2.28-24.34.18-46.22.18-71.49-19.99 3.08-28.32-10.3-32-30.24-40.85 37.24-88.43 45.45-141.75 28.98 0 25.01-1.99 45.37-.03 69.56.59 7.31 2.03 14.7 5.15 22.89 23.09 60.49 70.44 76.51 109.94 59.56zm-61.64 17.74c-2.44 5.22-5.43 9.04-9.04 13.63a50.92 50.92 0 0 0 6.8 7.29c.43.35.87.7 1.31 1.04 9.43 7.29 20.49 11.06 31.55 11.23 11.04.16 22.13-3.27 31.64-10.37 3.74-2.8 7.24-6.14 10.37-10.05l-.02-.03c-2.95-4.66-5.37-8.49-7.2-13.38-21.21 8.26-44.16 8.75-65.41.64zm-123.15 87.2c-1.08-4.22-2.34-7.98-3.77-11.35-8.17-19.25-28.53-28.02-48.51-36.63-3.38-1.46-6.75-2.91-10.29-4.52-.45.57-.91 1.13-1.38 1.68-2.74 3.36-5.96 6.35-9.54 8.94-9.93 7.19-22.75 11.32-35.96 11.97-13.16.64-26.79-2.16-38.42-8.83-5.78-3.32-11.07-7.58-15.58-12.85-3.19 1.53-6.5 3.03-9.87 4.57-19.2 8.76-40.85 18.63-48.77 35.11-1.74 3.63-3.13 7.6-4.17 11.91H0c.1-.5.21-1 .33-1.5 1.24-5.46 2.98-10.54 5.22-15.21 9.68-20.13 33.27-30.89 54.18-40.43 4.64-2.11 9.16-4.17 13.2-6.19 2.76-3.62 5.02-7.53 6.78-11.72 1.5-3.58 2.63-7.36 3.37-11.33a80.802 80.802 0 0 1-12.11-8.88c-15.69-13.92-26.66-25.28-33.72-38.41-7.17-13.34-10.18-28.14-9.79-48.7l1.13-64.9c.01-.64.13-1.25.33-1.81l-13.86-4.37c-2.01-43.88 23.4-70.14 54.85-82.75 11.46-4.6-7.73-29.69 18.63-20.06 35.21 12.87 113.36 30.45 131.85 52.56 15.03 17.96 15.63 27.72 15.29 51.16-.1 7.6-1.3 14.29-4.81 16.78-1.6 1.13-3.56 1.6-5.81 1.41v56.29c0 28.22-10.08 51.78-25.57 69.23a101.747 101.747 0 0 1-30.47 23.41c.67 3.63 1.61 7.09 2.8 10.39 1.42 3.94 3.24 7.69 5.44 11.27 3.81 1.77 8.16 3.65 12.53 5.53 22.01 9.48 44.42 19.14 54.36 42.56 1.94 4.59 3.61 9.78 4.95 15.67h-11.43zm-133.74-77.67a81.5 81.5 0 0 1-10.54-3.53c-.85 3.62-1.98 7.12-3.39 10.47-1.77 4.23-4.01 8.25-6.7 12.07 2.97 3.29 6.33 6.11 9.98 8.46 9.84 6.35 21.7 9.35 33.36 9.06 11.59-.28 22.93-3.83 31.8-10.53 2.36-1.79 4.53-3.8 6.49-6.03.59-.71 1.14-1.44 1.67-2.19-2.05-3.6-3.8-7.39-5.25-11.39a76.96 76.96 0 0 1-2.73-9.43c-11.35 4.06-22.83 6.08-34.09 5.91-6.99-.1-13.88-1.05-20.6-2.87zm-11.7-16.49c3.68 1.94 7.45 3.53 11.29 4.78l.16.04c7.1 2.2 14.5 3.26 21.97 3.26 11.94 0 24.04-2.71 35.28-7.83a90.55 90.55 0 0 0 30.23-22.28c13.77-15.53 22.73-36.57 22.73-61.87v-56.93h.02c-.13-3.55-.64-6.82-1.6-9.77-.93-2.84-2.26-5.35-4.08-7.48-6.83-8.02-13.32-7.69-22.56-7.22-.83.04-1.65.08-2.84.13-36.58 1.61-60.56 1.57-79.99-.13-17.93-1.56-32.01-4.5-48.39-8.83A82.054 82.054 0 0 1 49 100.78a88.09 88.09 0 0 1-9.33 12.66l-1.09 62.8c-.35 18.53 2.25 31.68 8.48 43.25 6.33 11.77 16.55 22.3 31.27 35.36 3.89 3.44 8.05 6.36 12.4 8.76.54.15 1.04.38 1.5.67zm8.98-34a5.57 5.57 0 0 1-1.64-7.7c1.67-2.58 5.12-3.31 7.7-1.64 6.35 4.13 12.43 6.36 18.23 6.44 5.6.07 11.16-1.91 16.66-6.17a5.572 5.572 0 0 1 7.82.98 5.584 5.584 0 0 1-.98 7.83c-7.56 5.87-15.45 8.59-23.63 8.48-8.01-.11-16.06-2.95-24.16-8.22zm-20.79-69.82c6.65 0 12.04 5.39 12.04 12.03 0 6.65-5.39 12.04-12.04 12.04-6.64 0-12.03-5.39-12.03-12.04 0-6.64 5.39-12.03 12.03-12.03zm90.8 0c6.65 0 12.04 5.39 12.04 12.03 0 6.65-5.39 12.04-12.04 12.04-6.65 0-12.03-5.39-12.03-12.04 0-6.64 5.38-12.03 12.03-12.03z"
+                />
+              </svg>
+              <!-- <div class="notice-icon-circle-2">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="https://www.w3.org/2000/svg"
+                viewBox="0 0 122.87 122.88"
+              >
+                <title>no-children</title>
+                <path
+                  d="M59.17,69.06ZM33.43,53.64a2,2,0,1,1-2,2,2,2,0,0,1,2-2Zm2.44,12.72a.94.94,0,1,1,1.07-1.55,4.51,4.51,0,0,0,5.64,0,.94.94,0,1,1,1.07,1.54,6.83,6.83,0,0,1-3.89,1.33,6.63,6.63,0,0,1-3.89-1.32ZM46.53,53.64a2,2,0,1,1-2,2,2,2,0,0,1,2-2ZM21,90.29c1.6-5.76,3.71-8.32,8-11.87l2-1.69,0,0c.14-.2.25-.32.35-.45a10.63,10.63,0,0,0,1.25-1.86,17.17,17.17,0,0,1-5.76-5.12c-1.27.32-2.34.6-3.23.84s-1.83.48-2.36.6l-.23,0a.94.94,0,0,1-.92-1l.54-20.07a.34.34,0,0,1,0-.1,15.41,15.41,0,0,1,.9-3.89,17.92,17.92,0,0,1,1.79-3.62,18.16,18.16,0,0,1,7.4-6.8,21.25,21.25,0,0,1,9.92-1.93,20.39,20.39,0,0,1,2.82.26L48.3,44c-6.56,5.66-14.17,6.86-22.65,4.24,0,4.09-.33,6.58,0,10.55a13.44,13.44,0,0,0,.84,3.75C30.26,72.42,38,75,44.5,72.26h0c.22-.09.43-.19.65-.3l.08,0a17.19,17.19,0,0,0,7.83-8.63,13.14,13.14,0,0,0,1-4c.07-.82.12-1.58.15-2.31l4.92,10.75v1.35a.94.94,0,0,1-1.71.54,6.15,6.15,0,0,0-1.63-1.54,8.58,8.58,0,0,0-1.66-.83,19.22,19.22,0,0,1-7.33,7,9,9,0,0,0,1,2l.19.3a15.76,15.76,0,0,1,4.3,2.8,17.78,17.78,0,0,1,3.91,5.44,41,41,0,0,1,1.79,5.5h-2a38.65,38.65,0,0,0-1.51-4.68,15.82,15.82,0,0,0-3.48-4.87,13.62,13.62,0,0,0-3.3-2.23,10.67,10.67,0,0,1-8.31,4A10.13,10.13,0,0,1,32.7,80a13,13,0,0,1-1.19-1.16l-1.3,1.08C26.38,83,24.43,85.48,23,90.3ZM34.39,75.18a11.22,11.22,0,0,1-1.48,2.23A8.59,8.59,0,0,0,34,78.61l.22.16a8.64,8.64,0,0,0,5.17,1.84,8.34,8.34,0,0,0,5.18-1.7,9.38,9.38,0,0,0,1.7-1.64h0a11.91,11.91,0,0,1-1.17-2.19,14.88,14.88,0,0,1-10.73.11ZM21.32,70.7Zm79.5,19.59c-.18-.69-.39-2.14-.62-2.68-1.34-3.16-4.67-4.6-8-6-.55-.24-1.11-.47-1.68-.74l-.23.27a8.07,8.07,0,0,1-1.56,1.47,11.08,11.08,0,0,1-5.9,2,11.71,11.71,0,0,1-6.3-1.45L76.47,83l-2.15-4.69a8.81,8.81,0,0,0,1.16-3,13.55,13.55,0,0,1-2-1.45c-.79-.7-1.51-1.36-2.16-2L66.37,61c0-.45,0-.91,0-1.4l.18-7.1a.77.77,0,0,1,.06-.3l-2.27-.71C63.45,32.32,87.78,31,98,43.23c2.47,3,2.57,4.54,2.51,8.39,0,1.25-.21,2.34-.79,2.75a1.37,1.37,0,0,1-1,.23v5.69a16.85,16.85,0,0,1-4.19,11.34,16.52,16.52,0,0,1-5,3.84,12.43,12.43,0,0,0,.46,1.7A9.55,9.55,0,0,0,90.91,79c.62.29,1.34.6,2.06.91,3.6,1.55,7.28,3.13,8.91,7a29.18,29.18,0,0,1,.81,3.39Zm-33.89-5.6a7.71,7.71,0,0,0-2.51,2.82,20.77,20.77,0,0,0-.69,2.77H61.86a18.81,18.81,0,0,1,.92-3.56A9.84,9.84,0,0,1,66.16,83l.77,1.68Zm12-8a11.72,11.72,0,0,1-1.73-.58,11.48,11.48,0,0,1-.55,1.72,10.7,10.7,0,0,1-1.1,2,8,8,0,0,0,1.64,1.38,9.76,9.76,0,0,0,5.46,1.49A9,9,0,0,0,87.84,81a8.28,8.28,0,0,0,1.06-1l.28-.36a12.25,12.25,0,0,1-.87-1.87,13.54,13.54,0,0,1-.44-1.54,16,16,0,0,1-5.59,1,14.74,14.74,0,0,1-3.38-.48ZM77,74a11,11,0,0,0,1.85.78h0a12.16,12.16,0,0,0,3.6.53,14,14,0,0,0,5.78-1.28,14.84,14.84,0,0,0,8.68-13.8V54.49h0a6.16,6.16,0,0,0-.26-1.6A3.9,3.9,0,0,0,96,51.67c-1.12-1.32-2.18-1.27-3.7-1.19l-.46,0a100.8,100.8,0,0,1-13.11,0A44.34,44.34,0,0,1,70.79,49a13,13,0,0,1-.89,1.74,14.44,14.44,0,0,1-1.53,2.08l-.18,6.76a13.79,13.79,0,0,0,1.38,7.08,22.46,22.46,0,0,0,5.13,5.8,11.27,11.27,0,0,0,2,1.44A1,1,0,0,1,77,74Zm1.47-5.57a.92.92,0,0,1-.27-1.26.93.93,0,0,1,1.27-.27,5.7,5.7,0,0,0,3,1,4.23,4.23,0,0,0,2.72-1,.92.92,0,0,1,1.13,1.45,6.09,6.09,0,0,1-3.88,1.39,7.5,7.5,0,0,1-4-1.35ZM75,57a2,2,0,1,1-2,2,2,2,0,0,1,2-2Zm14.89,0a2,2,0,1,1-2,2,2,2,0,0,1,2-2Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M73.42,1.17A61.25,61.25,0,0,0,18,18h0A61.77,61.77,0,0,0,4.65,37.93,62.09,62.09,0,0,0,1.17,49.44a62,62,0,0,0,0,24,60.88,60.88,0,0,0,9.16,22.12,61.3,61.3,0,0,0,7.5,9.19l.16.15a61.06,61.06,0,0,0,20,13.35h0a61.78,61.78,0,0,0,35.48,3.48,62.09,62.09,0,0,0,11.51-3.48,61.59,61.59,0,0,0,33.29-33.29,62.09,62.09,0,0,0,3.48-11.51,62,62,0,0,0,0-24,61,61,0,0,0-9.16-22.13A61.45,61.45,0,0,0,84.91,4.65h0a61.24,61.24,0,0,0-11.5-3.48ZM85.75,103.34l-40-87.48a3.12,3.12,0,0,1-.3-.73,3.18,3.18,0,0,1,2.23-3.9c.88-.24,1.8-.46,2.75-.67s1.76-.35,2.75-.52h0c1.4-.22,2.77-.39,4.09-.49s2.78-.17,4.17-.17a52.4,52.4,0,0,1,10.16,1A51.35,51.35,0,0,1,90.3,18.13a52.13,52.13,0,0,1,19.21,23.38h0a51.46,51.46,0,0,1,2.95,9.74,52.63,52.63,0,0,1,0,20.32A52.12,52.12,0,0,1,98.22,98.22c-.68.68-1.46,1.41-2.36,2.21s-1.6,1.38-2.42,2c-.49.39-1,.77-1.51,1.14s-.9.64-1.41,1a3.3,3.3,0,0,1-.57.34,3.17,3.17,0,0,1-4.2-1.56ZM37.11,19.51l40,87.49a3.12,3.12,0,0,1,.3.73,3.18,3.18,0,0,1-2.23,3.9c-.86.23-1.79.46-2.78.67-.79.17-1.67.33-2.63.49h-.1c-1.4.23-2.77.39-4.09.5s-2.79.16-4.17.16a52.4,52.4,0,0,1-10.16-1,52,52,0,0,1-18.73-7.75A52.06,52.06,0,0,1,18.16,90.33a51.75,51.75,0,0,1-4.81-9h0a51.46,51.46,0,0,1-2.95-9.74,52.63,52.63,0,0,1,0-20.32,52,52,0,0,1,7.75-18.73,52.38,52.38,0,0,1,6.49-7.91c.68-.68,1.46-1.42,2.35-2.21s1.61-1.38,2.43-2c.49-.38,1-.76,1.51-1.13s.9-.64,1.41-1a3.25,3.25,0,0,1,.57-.33,3.17,3.17,0,0,1,4.2,1.56Z"
+                />
+              </svg> -->
+            </div>
+            <h3 class="notice-card-title">No niños</h3>
+            <p class="notice-card-text">
+              Aunque amamos a tus pequeños, hemos decidido que nuestra boda sea
+              una celebración solo para adultos. Esperamos que esto te permita
+              relajarte y disfrutar la velada. Gracias por tu comprensión.
+            </p>
+          </div>
+
+          <!-- Punctuality Notice -->
+          <div class="notice-card animate-on-scroll">
+            <div class="notice-icon-circle">
+              <svg viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                />
+              </svg>
+            </div>
+            <h3 class="notice-card-title">Puntualidad</h3>
+            <p class="notice-card-text" id="punctualityText">
+              Por favor llega a tiempo para que podamos disfrutar juntos de la
+              ceremonia y recepción.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       BACKGROUND IMAGE SECTION (Before Timeline)
+       ============================================ -->
+    <div class="image-overlay-section">
+      <img
+        src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/13.jpg"
+        alt="Wedding celebration"
+        class="image-overlay-bg"
+        loading="lazy"
+      />
+      <div class="image-overlay-dark"></div>
+
+      <div class="image-overlay-content animate-on-scroll">
+        <h2>Únete a Nosotros en un Día para Recordar</h2>
+        <p>
+          Tu presencia en nuestra boda significa mucho para nosotros. No podemos
+          esperar para celebrar este momento especial con nuestra familia y
+          amigos más cercanos.
+        </p>
+      </div>
+    </div>
+
+    <!-- ============================================
+       TIMELINE SECTION
+       ============================================ -->
+    <section
+      class="timeline-section"
+      id="timeline-section"
+      style="background-color: var(--color-card-bg)"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Itinerario</h2>
+          <p class="section-subtitle">Programa del día</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <!-- Timeline items will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       LODGING & ACCOMMODATION SECTION
+       ============================================ -->
+    <section class="lodging" id="lodging">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hospedaje</h2>
+          <p class="section-subtitle">Lugares recomendados para hospedarse</p>
+        </div>
+
+        <div class="lodging-list" id="lodgingList">
+          <!-- Lodging items will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       PHOTO GALLERY SECTION
+       ============================================ -->
+    <section class="gallery" id="photos">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Previo al Gran Día</h2>
+          <p class="section-subtitle">Celebrando el amor que nos une</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/16.jpg"
+              alt="Wedding memory 7"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/3.jpg"
+              alt="Wedding memory 1"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/7.jpeg"
+              alt="Wedding memory 5"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/5.jpg"
+              alt="Wedding memory 3"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/22.jpeg"
+              alt="Wedding memory 6"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/10.jpeg"
+              alt="Wedding memory 7"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/6.jpg"
+              alt="Wedding memory 4"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/17.jpg"
+              alt="Wedding memory 8"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/18.jpg"
+              alt="Wedding memory 7"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/11.jpg"
+              alt="Wedding memory 8"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/12.jpg"
+              alt="Wedding memory 5"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img
+              src="https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/4.jpg"
+              alt="Wedding memory 2"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       GIFTS SECTION
+       ============================================ -->
+    <section
+      class="gifts"
+      id="gifts"
+      style="background-color: var(--color-card-bg)"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Regalos</h2>
+        </div>
+
+        <div class="gifts-content">
+          <p>
+            Tu presencia en nuestra boda es el mejor regalo que podríamos pedir.
+            Sin embargo, si aún deseas obsequiar algo, puedes realizar una
+            transferencia bancaria a estas cuentas:
+          </p>
+
+          <!-- Bank Accounts Container -->
+          <div id="bankAccountsContainer" class="bank-accounts-grid">
+            <!-- Accounts will be populated by JavaScript -->
+          </div>
+
+          <p style="margin-top: var(--spacing-xl)">
+            En la recepción también habrá sobres disponibles para un regalo
+            personal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       RSVP SECTION - NEW FORM
+       ============================================ -->
+    <section class="rsvp" id="rsvp">
+      <div class="container">
+        <div class="rsvp-content">
+          <div class="section-header">
+            <h2 class="section-title">Confirma tu Asistencia</h2>
+          </div>
+
+          <!-- Guest Greeting (shown when ID is valid) -->
+          <div id="guestGreeting" style="display: none">
+            <p class="greeting-text">Hola <strong id="guestName"></strong>,</p>
+            <p class="tickets-info">
+              Tienes <strong id="availableTickets"></strong> boletos
+              disponibles.
+            </p>
+          </div>
+
+          <!-- Error message (shown when ID is invalid) -->
+          <div id="invalidGuest" class="error-message" style="display: none">
+            <p>⚠️ Invitación no válida. Por favor verifica tu enlace.</p>
+          </div>
+
+          <!-- RSVP Form -->
+          <form id="rsvpForm" class="rsvp-form" style="display: none">
+            <!-- Field 1: Will you attend? -->
+            <div class="form-group">
+              <label for="attendance" class="form-label"
+                >¿Podrás asistir?</label
+              >
+              <select
+                id="attendance"
+                name="attendance"
+                class="form-select"
+                required
+              >
+                <option value="">Selecciona una opción</option>
+                <option value="yes">Sí asistiré</option>
+                <option value="no">No podré asistir</option>
+              </select>
+            </div>
+
+            <!-- Field 2: How many tickets? (conditional) -->
+            <div id="ticketsGroup" class="form-group" style="display: none">
+              <label for="ticketsCount" class="form-label"
+                >¿Cuántos boletos confirmas?</label
+              >
+              <select id="ticketsCount" name="ticketsCount" class="form-select">
+                <option value="">Selecciona cantidad</option>
+                <!-- Options will be populated dynamically -->
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="submitBtn"
+              disabled
+            >
+              Enviar
+            </button>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state" style="display: none">
+              <span class="loading-spinner"></span>
+              Enviando...
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="success-message"
+            style="display: none"
+          >
+            <div class="success-icon">✓</div>
+            <h3>¡Gracias por confirmar!</h3>
+            <p id="successText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+       STICKY RSVP BUTTON AT BOTTOM (Mobile)
+       ============================================ -->
+    <div class="sticky-rsvp">
+      <button onclick="scrollToSection('rsvp')" class="btn btn-primary">
+        Confirmar Asistencia
+      </button>
+    </div>
+
+    <!-- Modal simple para ver imágenes -->
+    <div id="imageModal">
+      <img id="modalImg" src="" alt="" />
+    </div>
+
+    <!-- Floating RSVP Button (Desktop only) -->
+    <a
+      href="#rsvp"
+      class="floating-rsvp-button"
+      aria-label="Confirmar asistencia"
+    >
+      Confirmar asistencia
+    </a>
+
+    <!-- ============================================
+       FLOATING MUSIC BUTTON
+       ============================================ -->
+    <button
+      id="musicButton"
+      class="music-button"
+      aria-label="Control de música"
+    >
+      <!-- Icon: Muted (default) -->
+      <svg
+        id="mutedIcon"
+        viewBox="0 0 24 24"
+        xmlns="https://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+        />
+      </svg>
+      <!-- Icon: Playing (hidden by default) -->
+      <svg
+        id="playingIcon"
+        viewBox="0 0 24 24"
+        xmlns="https://www.w3.org/2000/svg"
+        style="display: none"
+      >
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+        />
+      </svg>
+    </button>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+      <source
+        src="https://github.com/RafaelCasillas08/anniversary-gift/blob/main/sound/contigo-quiero.mp3?raw=true"
+        type="audio/mpeg"
+      />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- ============================================
+       FOOTER
+       ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-names">
+          <span id="footerBride">Bride</span>
+          <span class="footer-heart">♥</span>
+          <span id="footerGroom">Groom</span>
+        </p>
+        <p class="footer-copyright">
+          &copy; <span id="currentYear"></span> - Hecho con amor
+        </p>
+      </div>
+    </footer>
+
+    <!-- ============================================
+       JAVASCRIPT - CONFIGURATION & FUNCTIONALITY
+       ============================================ -->
+    <script>
+      // ============================================
+      // CONFIGURATION OBJECT
+      // ============================================
+      const CONFIG = {
+        // Couple Names
+        bride: "Karla",
+        groom: "Rafa",
+
+        // Wedding Date & Time
+        eventISOStart: "2026-02-07T17:00:00",
+        eventISOEnd: "2026-02-08T02:00:00",
+
+        // Mass/Ceremony Location
+        massVenueName: "La Capilla De Guadalupe",
+        massAddress: "De Guadalupe 137, Jamay, Jal.",
+        massMapsLink: "https://maps.app.goo.gl/ezvcyA79PbYjbp3Z8",
+        massImage:
+          "https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/capilla.jpeg",
+
+        // Reception Location
+        receptionVenueName: "El Olvido",
+        receptionAddress: "Carretera Jamay - La Barca km 20, Jamay, Jal.",
+        receptionMapsLink: "https://maps.app.goo.gl/NFzfGC3fdfkjCuTw9",
+        receptionImage:
+          "https://raw.githubusercontent.com/RafaelCasillas08/invitacion/main/fotos/olvido.jpeg",
+
+        // Dress Code
+        dressCodeTitle: "Riguroso Formal",
+        dressCodeIconSrc:
+          "https://www.shutterstock.com/image-illustration/dress-suit-icon-isolated-on-260nw-1055797397.jpg",
+
+        // Lodging
+        lodging: [
+          {
+            name: "Hotel Corral Grande",
+            location: "Ramón Corona 86, Jamay",
+            locationLink: "https://maps.app.goo.gl/qAFP8FQtFiGjehbk8",
+            phone: "+52 392 924 2180",
+          },
+          {
+            name: "Hotel Real del Lago",
+            location: "Francisco I. Madero 65, Jamay",
+            locationLink: "https://maps.app.goo.gl/i7xSqkXYqWmZ8biFA",
+            phone: "+52 392 688 2993",
+          },
+          {
+            name: "Hotel Cortés",
+            location: "Juárez 6, Jamay",
+            locationLink: "https://maps.app.goo.gl/MdYD3uZTM6K8Rd4FA",
+            phone: "+52 392 924 0350",
+          },
+          {
+            name: "Airbnb",
+            location: "Ver opciones en Airbnb",
+            locationLink:
+              "https://www.airbnb.com/s/Jamay--JAL/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJyZfKOXHbLoQRDJnSTBnCLf0&acp_id=4ec149c8-cf1d-4442-b365-9181b2bde3b8&date_picker_type=calendar&checkin=2026-02-07&checkout=2026-02-08&search_type=user_map_move&query=Jamay%2C%20JAL&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-12-01&monthly_length=3&monthly_end_date=2026-03-01&search_mode=regular_search&price_filter_input_type=2&price_filter_num_nights=1&channel=EXPLORE&ne_lat=20.303483642353626&ne_lng=-102.69917777991714&sw_lat=20.282327855929864&sw_lng=-102.71626288545008&zoom=15.290886945434131&zoom_level=15.290886945434131&search_by_map=true",
+            phone: "",
+          },
+        ],
+
+        // Gift Bank Accounts (Bride & Groom)
+        giftAccounts: [
+          {
+            name: "Karla Korina Morales Cortés",
+            clabe: "014320200133236039",
+            bankName: "Santander",
+          },
+          // {
+          //   name: "Rafael Casillas López",
+          //   clabe: "098765432109876543",
+          //   bankName: "BanCoppel",
+          // },
+        ],
+
+        // RSVP & Notices
+        rsvpDeadlineLabel:
+          "Por favor confirma tu asistencia antes del 5 de enero",
+        punctualityNote:
+          "Por favor llega a tiempo para que podamos disfrutar juntos de la ceremonia y recepción.",
+
+        // Guest mapping (mock data for testing)
+        guestMap: {
+          "rafa-karla": { fullName: "Rafa y Karla", allowedTickets: 2 },
+          "paola-ezequiel": { fullName: "Paola y Ezequiel", allowedTickets: 2 },
+          carmelita: { fullName: "Carmen y Juan", allowedTickets: 2 },
+          "casillas-lopez": {
+            fullName: "Familia Casillas López",
+            allowedTickets: 3,
+          },
+          regina: { fullName: "Regina", allowedTickets: 2 },
+          yoli: { fullName: "Tia Yoli", allowedTickets: 1 },
+          "raquel-joaquin": { fullName: "Raquel y Joaquín", allowedTickets: 4 },
+          "sharai-alejandro": {
+            fullName: "Sharai y Alejandro",
+            allowedTickets: 2,
+          },
+          "toña-alfonso": { fullName: "Tia Toña y Alfonso", allowedTickets: 3 },
+          "michel-luis": { fullName: "Yazmin y Luis", allowedTickets: 2 },
+          martha: { fullName: "Tia Martha", allowedTickets: 1 },
+          chuy: { fullName: "Jesus Eduardo", allowedTickets: 2 },
+          "cris-hugo": { fullName: "Cristina y Hugo", allowedTickets: 2 },
+          "cris-carlos": { fullName: "Cristina y Carlos", allowedTickets: 3 },
+          "alonso-tere": { fullName: "Tere y Alonso", allowedTickets: 2 },
+          "erika-fabian": { fullName: "Erika y Fabian", allowedTickets: 5 },
+          almita: { fullName: "Almita", allowedTickets: 1 },
+          cipriano: { fullName: "Cipriano", allowedTickets: 1 },
+          luz: { fullName: "Tia Luz", allowedTickets: 1 },
+          juanjose: { fullName: "Juan Jose", allowedTickets: 1 },
+          juancarlos: { fullName: "Juan Carlos", allowedTickets: 2 },
+          luzmaria: { fullName: "Luz Maria", allowedTickets: 1 },
+          "pame-jorge": { fullName: "Pame y Jorge", allowedTickets: 2 },
+          "mariela-jorge": { fullName: "Mariela y Jorge", allowedTickets: 2 },
+          miguelangel: { fullName: "Miguel Angel", allowedTickets: 1 },
+          "martha-arturo": { fullName: "Martha y Arturo", allowedTickets: 2 },
+          miguelmelgarejo: {
+            fullName: "Viky y Miguel Melgarejo",
+            allowedTickets: 2,
+          },
+          pacomelgarejo: {
+            fullName: "Lupita y Paco Melgarejo",
+            allowedTickets: 2,
+          },
+          carlosmelgarejo: {
+            fullName: "Fer y Carlos Melgarejo",
+            allowedTickets: 2,
+          },
+          "abril-ricardo": { fullName: "Abril y Ricardo", allowedTickets: 2 },
+          "janeth-christian": {
+            fullName: "Janeth y Christian",
+            allowedTickets: 3,
+          },
+          "alan-sulgi": { fullName: "Sulgi y Alan", allowedTickets: 2 },
+          "yola-cesar": { fullName: "Yolanda y Cesar", allowedTickets: 3 },
+          "dani-cheli": { fullName: "Cheli y Dani", allowedTickets: 2 },
+          "fer-julio": { fullName: "Fernanda y Julio", allowedTickets: 2 },
+          "brenda-alei": { fullName: "Brenda y Alei", allowedTickets: 2 },
+          omarconrrado: { fullName: "Omar", allowedTickets: 1 },
+          saul: { fullName: "Saul", allowedTickets: 1 },
+          josevs: { fullName: "Jose", allowedTickets: 1 },
+          felipe: { fullName: "Felipe", allowedTickets: 1 },
+          pepe: { fullName: "Jose", allowedTickets: 1 },
+          paolasanchez: { fullName: "Paola", allowedTickets: 1 },
+          Isabellopez: { fullName: "Isabel", allowedTickets: 1 },
+          vanesahernadez: { fullName: "Vanessa", allowedTickets: 2 },
+          "ale-rojo": { fullName: "Alejandra y Rogelio", allowedTickets: 2 },
+          diegoflores: { fullName: "Diego", allowedTickets: 1 },
+          carlosflores: { fullName: "Carlos", allowedTickets: 1 },
+          alanortega: { fullName: "Alan", allowedTickets: 1 },
+          naelortega: { fullName: "Nael", allowedTickets: 1 },
+          alejandragon: { fullName: "Alejandra", allowedTickets: 1 },
+          "susy-josa": { fullName: "Susana y Josaphat", allowedTickets: 2 },
+          "jessi-miguel": { fullName: "Jessica y Miguel", allowedTickets: 2 },
+          ninna: { fullName: "Erika", allowedTickets: 1 },
+          graciela: { fullName: "Grace y Carlos", allowedTickets: 2 },
+          itzel: { fullName: "Itzel y Gabriel", allowedTickets: 2 },
+          solecito: { fullName: "Marisol", allowedTickets: 2 },
+          mimiurs: { fullName: "Mimiurs", allowedTickets: 1 },
+          ivannoriega: { fullName: "Ivan y Yesi", allowedTickets: 2 },
+          ramy: { fullName: "Ramy", allowedTickets: 1 },
+          pauleta: { fullName: "Paulo", allowedTickets: 2 },
+          rafiqui: { fullName: "Rafa", allowedTickets: 2 },
+          estelita: { fullName: "Estela y Ivan", allowedTickets: 2 },
+          oscarmagallanes: { fullName: "Oscar", allowedTickets: 2 },
+          "mily-gabriel": { fullName: "Milagros y Gabriel", allowedTickets: 2 },
+          "lisa-carlos": { fullName: "Lisa y Carlos", allowedTickets: 5 },
+          "kori-memo": { fullName: "Korina y Guillermo", allowedTickets: 2 },
+          "pao-jorge": { fullName: "Paola y Jorge", allowedTickets: 2 },
+          citlalli: { fullName: "Citlalli", allowedTickets: 2 },
+          frank: { fullName: "Francisco", allowedTickets: 2 },
+          sandra: { fullName: "Sandra", allowedTickets: 2 },
+          luisgutierrez: { fullName: "Luis", allowedTickets: 2 },
+          rubenheredia: { fullName: "Ruben", allowedTickets: 2 },
+          "rosa-abue": { fullName: "Abue", allowedTickets: 1 },
+          tiacarmen: { fullName: "Tia Carmen", allowedTickets: 1 },
+          tino: { fullName: "Tío Tino y Tía Irma", allowedTickets: 2 },
+          "petrita-beto": {
+            fullName: "Tia Petrita y Tio Beto",
+            allowedTickets: 2,
+          },
+          "sofia-ramon": {
+            fullName: "Tía Sofía, Tío Ramon y Josué",
+            allowedTickets: 3,
+          },
+          "licha-pelon": {
+            fullName: "Tía Licha y padrino José Luis",
+            allowedTickets: 2,
+          },
+          "elva-jorge": { fullName: "Tía Elva y Tío Jorge", allowedTickets: 2 },
+          "alma-armando": {
+            fullName: "Familia Godinez Lopez",
+            allowedTickets: 5,
+          },
+          "jose-sophi": {
+            fullName: "José Armando y Sophia",
+            allowedTickets: 2,
+          },
+          gris: { fullName: "Tía Gris y Janessa", allowedTickets: 2 },
+          melissa: { fullName: "Melissa y Brett", allowedTickets: 2 },
+          jenny: { fullName: "Jenny y Mario", allowedTickets: 2 },
+          "adrian-andy": {
+            fullName: "Padrino Adrián y Madrina Andrea",
+            allowedTickets: 2,
+          },
+          marissa: { fullName: "Marissa y Oscar", allowedTickets: 2 },
+          isela: { fullName: "Isela y Alejandro", allowedTickets: 2 },
+          moni: { fullName: "Moni y Tona", allowedTickets: 2 },
+          sergio: { fullName: "Sergio y Anarely", allowedTickets: 2 },
+          "mary-eduardo": { fullName: "Mary y Eduardo", allowedTickets: 2 },
+          "valeria-oscar": { fullName: "Valeria y Oscar", allowedTickets: 2 },
+          "andrea-beto": { fullName: "Andrea y Beto", allowedTickets: 2 },
+          alvaro: { fullName: "Álvaro y Gris", allowedTickets: 2 },
+          "jorge-jaz": { fullName: "Jorge y Jazmin", allowedTickets: 2 },
+          "diego-meli": { fullName: "Diego y Meli", allowedTickets: 2 },
+          "ramon-karla": { fullName: "Ramón y Karla", allowedTickets: 2 },
+          liliana: { fullName: "Liliana y Jimmy", allowedTickets: 2 },
+          gladis: { fullName: "Gladis y Chepe", allowedTickets: 2 },
+          anabel: { fullName: "Anabel y Chava", allowedTickets: 2 },
+          "edith-ulises": { fullName: "Edith y Ulises", allowedTickets: 2 },
+          "cesar-godinez": { fullName: "César", allowedTickets: 2 },
+          "jose-briseno": { fullName: "José", allowedTickets: 2 },
+          manllo: { fullName: "Fernando", allowedTickets: 2 },
+          "elias-zuno": { fullName: "Elías y Yesi", allowedTickets: 2 },
+          "dani-ara": { fullName: "Daniel y Araceli", allowedTickets: 2 },
+          felipedas: { fullName: "Felipe", allowedTickets: 1 },
+          rodri: { fullName: "Rodri", allowedTickets: 1 },
+          "alex-valdivia": {
+            fullName: "Alejandro y Daniela",
+            allowedTickets: 2,
+          },
+          cristo: { fullName: "Cristo", allowedTickets: 1 },
+          "daniela-maciel": { fullName: "Daniela", allowedTickets: 1 },
+          "cristy-fabian": { fullName: "Cristy y Fabián", allowedTickets: 2 },
+          "luis-ballesteros": { fullName: "Luis Gerardo", allowedTickets: 1 },
+          "martin-romero": { fullName: "Martin y Osiris", allowedTickets: 2 },
+          "uli-romero": { fullName: "Ulises y", allowedTickets: 2 },
+          "jesus-": { fullName: "Jesús y", allowedTickets: 2 },
+          "rafa-chavez": { fullName: "Rafa", allowedTickets: 2 },
+          rodriguezbecerra: {
+            fullName: "Familia Rodriguez Becerra",
+            allowedTickets: 5,
+          },
+          lety: { fullName: "Lety y Ulises", allowedTickets: 2 },
+          mtromanuel: { fullName: "Manuel", allowedTickets: 2 },
+          "soco-gonza": { fullName: "Soco y Gonza", allowedTickets: 2 },
+          karisenador: { fullName: "Kari", allowedTickets: 2 },
+          erickatoto: { fullName: "Erick", allowedTickets: 2 },
+          "tia paz": { fullName: "Tía Paz", allowedTickets: 2 },
+          "beti-lorenzo": { fullName: "Beti y Lorenzo", allowedTickets: 2 },
+          "fatima-pepe": { fullName: "Fatima y Pepe", allowedTickets: 2 },
+          juanito: { fullName: "Alondra y Juan", allowedTickets: 2 },
+          "azucena-lorenzo": {
+            fullName: "Azucena y Lorenzo",
+            allowedTickets: 2,
+          },
+          "": { fullName: "", allowedTickets: 0 },
+          juanca: { fullName: "", allowedTickets: 0 },
+          "alejandro-zuno": { fullName: "Alejandro", allowedTickets: 2 },
+          migue: { fullName: "Migue", allowedTickets: 2 },
+          "ricardo-diablo": { fullName: "Ricardo", allowedTickets: 1 },
+          "jesus-gomez": { fullName: "Jesús", allowedTickets: 2 },
+          "fernando-cervantes": { fullName: "Fernando", allowedTickets: 2 },
+          "garcia-cervantes": {
+            fullName: "Familia García Cervantes",
+            allowedTickets: 6,
+          },
+        },
+
+        // RSVP Endpoint
+        rsvpEndpoint:
+          "https://script.google.com/macros/s/AKfycbxgda2KIFCLMLiRA5l9ohgbJnqR5RNscFl9zREXgvOO2MIJwn9hPZKUfFm0I0WW0Q/exec",
+
+        // WhatsApp (keeping for potential fallback)
+        whatsappNumber: "5213312345678",
+        whatsappMessage:
+          "¡Hola! Me gustaría confirmar mi asistencia a la boda de {{BRIDE}} y {{GROOM}}. Mi nombre es: ",
+
+        // Timeline
+        timeline: [
+          {
+            time: "4:30 PM",
+            title: "Llegada de Invitados",
+            description:
+              "Por favor llega temprano para encontrar tu lugar en la capilla",
+          },
+          {
+            time: "5:00 PM",
+            title: "Inicio de Ceremonia",
+            description: "Comienza la ceremonia nupcial",
+          },
+          {
+            time: "6:30 PM",
+            title: "Recepción y Coctelería",
+            description: "Recepción en el Olvido con bebidas ligeras",
+          },
+          {
+            time: "7:30 PM",
+            title: "Inicia el Mariachi",
+            description: "El mariachi inicia la celebración",
+          },
+          {
+            time: "8:30 PM",
+            title: "Cena y Brindis",
+            description: "Cena de celebración con los novios",
+          },
+          {
+            time: "9:30 PM",
+            title: "Vals de los novios",
+            description: "Los recién casados bailan el vals",
+          },
+          {
+            time: "10:00 PM",
+            title: "Comienza el Baile",
+            description: "Baila toda la noche con nosotros",
+          },
+          {
+            time: "01:00 AM",
+            title: "Cena de desvelados",
+            description: "Una segunda cena para seguir bailando",
+          },
+          {
+            time: "2:30 AM",
+            title: "Despedida",
+            description: "Gracias por celebrar con nosotros",
+          },
+        ],
+      };
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      // ============================================
+      // INITIALIZE PAGE
+      // ============================================
+      function initializePage() {
+        // Set names
+        document.getElementById(
+          "heroNames"
+        ).textContent = `${CONFIG.bride} & ${CONFIG.groom}`;
+        document.getElementById("footerBride").textContent = CONFIG.bride;
+        document.getElementById("footerGroom").textContent = CONFIG.groom;
+
+        // Set dates
+        const eventDate = new Date(CONFIG.eventISOStart);
+        const dateOptions = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        document.getElementById("heroDate").textContent =
+          eventDate.toLocaleDateString("es-ES", dateOptions);
+        document.getElementById("detailDate").textContent =
+          eventDate.toLocaleDateString("es-ES", dateOptions);
+
+        // Set time
+        const startTime = new Date(CONFIG.eventISOStart);
+        const endTime = new Date(CONFIG.eventISOEnd);
+        const timeLabel = `${startTime.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+        })}`;
+        document.getElementById("detailTime").textContent = timeLabel;
+
+        // Set venue details
+        document.getElementById("massVenueName").textContent =
+          CONFIG.massVenueName;
+        document.getElementById("massAddress").textContent = CONFIG.massAddress;
+        document.getElementById("massMapsLink").href = CONFIG.massMapsLink;
+        document.getElementById("massVenueImage").src = CONFIG.massImage;
+
+        document.getElementById("receptionVenueName").textContent =
+          CONFIG.receptionVenueName;
+        document.getElementById("receptionAddress").textContent =
+          CONFIG.receptionAddress;
+        document.getElementById("receptionMapsLink").href =
+          CONFIG.receptionMapsLink;
+        document.getElementById("receptionVenueImage").src =
+          CONFIG.receptionImage;
+
+        // Set dress code
+        document.getElementById("dressCodeTitle").textContent =
+          CONFIG.dressCodeTitle;
+        document.getElementById("dressCodeIcon").src = CONFIG.dressCodeIconSrc;
+
+        // Set notices
+        document.getElementById("rsvpDeadlineText").textContent =
+          CONFIG.rsvpDeadlineLabel;
+        document.getElementById("punctualityText").textContent =
+          CONFIG.punctualityNote;
+
+        // Set bank accounts
+        generateBankAccounts();
+
+        // Set year
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+
+        // Generate sections
+        generateTimeline();
+        generateLodgingList();
+        setupCalendarButtons();
+
+        // Start countdown
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
+
+      // ============================================
+      // NEW COUNTDOWN with vertical separators
+      // ============================================
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const eventDate = new Date(CONFIG.eventISOStart).getTime();
+        const distance = eventDate - now;
+
+        const countdownEl = document.getElementById("countdown");
+
+        if (distance < 0) {
+          countdownEl.innerHTML =
+            '<div class="countdown-message">¡Hoy es el gran día! 🎉</div>';
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = `
+        <div class="countdown-item">
+          <span class="countdown-value">${String(days).padStart(2, "0")}</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value">${String(hours).padStart(2, "0")}</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value">${String(minutes).padStart(
+            2,
+            "0"
+          )}</span>
+          <span class="countdown-label">Mins</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value">${String(seconds).padStart(
+            2,
+            "0"
+          )}</span>
+          <span class="countdown-label">Segs</span>
+        </div>
+      `;
+      }
+
+      // ============================================
+      // GENERATE TIMELINE
+      // ============================================
+      function generateTimeline() {
+        const timelineEl = document.getElementById("timeline");
+        const timelineHTML = CONFIG.timeline
+          .map(
+            (event) => `
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-time">${event.time}</div>
+          <h3 class="timeline-title">${event.title}</h3>
+          <p class="timeline-description">${event.description}</p>
+        </div>
+      `
+          )
+          .join("");
+
+        timelineEl.innerHTML = timelineHTML;
+      }
+
+      // ============================================
+      // GENERATE LODGING LIST
+      // ============================================
+      function generateLodgingList() {
+        const lodgingEl = document.getElementById("lodgingList");
+        const lodgingHTML = CONFIG.lodging
+          .map(
+            (item) => `
+        <div class="lodging-item animate-on-scroll">
+          <div class="lodging-name">${item.name}</div>
+          <div class="lodging-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+            </svg>
+            <a href="${
+              item.locationLink
+            }" target="_blank" rel="noopener noreferrer" class="lodging-link">
+              ${item.location}
+            </a>
+          </div>
+          ${
+            item.phone
+              ? `
+          <div class="lodging-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            <a href="tel:${item.phone.replace(/\s/g, "")}" class="lodging-link">
+              ${item.phone}
+            </a>
+          </div>`
+              : ""
+          }
+        </div>
+      `
+          )
+          .join("");
+
+        lodgingEl.innerHTML = lodgingHTML;
+      }
+
+      // ============================================
+      // CALENDAR FUNCTIONALITY
+      // ============================================
+      function setupCalendarButtons() {
+        // "Add to Calendar" button in When card - shows options
+        document
+          .getElementById("addToCalendarBtn")
+          .addEventListener("click", showCalendarOptions);
+      }
+
+      function showCalendarOptions() {
+        window.open(generateGoogleCalendarUrl(), "_blank");
+      }
+
+      function generateGoogleCalendarUrl() {
+        const title = `Boda de ${CONFIG.bride} y ${CONFIG.groom}`;
+        const location = `${CONFIG.massVenueName}, ${CONFIG.massAddress}`;
+        const details = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
+
+        const formatGoogleDate = (date) => {
+          return date.toISOString().replace(/-|:|\.\d+/g, "");
+        };
+
+        const startDate = new Date(CONFIG.eventISOStart);
+        const endDate = new Date(CONFIG.eventISOEnd);
+        const dates = `${formatGoogleDate(startDate)}/${formatGoogleDate(
+          endDate
+        )}`;
+
+        const params = new URLSearchParams({
+          action: "TEMPLATE",
+          text: title,
+          dates: dates,
+          details: details,
+          location: location,
+        });
+
+        return `https://www.google.com/calendar/render?${params.toString()}`;
+      }
+
+      function downloadIcsFile() {
+        const title = `Boda de ${CONFIG.bride} y ${CONFIG.groom}`;
+        const location = `${CONFIG.receptionVenueName}, ${CONFIG.receptionAddress}`;
+        const description = `¡Únete a nosotros para la celebración de la boda!\\n\\nCeremonia: ${CONFIG.massVenueName}\\nRecepción: ${CONFIG.receptionVenueName}`;
+
+        const formatIcsDate = (dateString) => {
+          const date = new Date(dateString);
+          return date.toISOString().replace(/-|:|\.\d+/g, "");
+        };
+
+        const startDate = formatIcsDate(CONFIG.eventISOStart);
+        const endDate = formatIcsDate(CONFIG.eventISOEnd);
+        const nowDate = formatIcsDate(new Date().toISOString());
+
+        const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:${startDate}
+DTEND:${endDate}
+DTSTAMP:${nowDate}
+SUMMARY:${title}
+DESCRIPTION:${description}
+LOCATION:${location}
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio: ${title} mañana
+END:VALARM
+END:VEVENT
+END:VCALENDAR`;
+
+        const blob = new Blob([icsContent], {
+          type: "text/calendar;charset=utf-8",
+        });
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = "wedding.ics";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      // ============================================
+      // COPY ACCOUNT NUMBER
+      // ============================================
+      function copyAccountNumber() {
+        const accountNumber = CONFIG.giftAccountNumber;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard
+            .writeText(accountNumber)
+            .then(() => {
+              alert("¡Número de cuenta copiado!");
+            })
+            .catch(() => {
+              fallbackCopy(accountNumber);
+            });
+        } else {
+          fallbackCopy(accountNumber);
+        }
+      }
+
+      function fallbackCopy(text) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        try {
+          document.execCommand("copy");
+          alert("¡Número de cuenta copiado!");
+        } catch (err) {
+          alert("No se pudo copiar: " + text);
+        }
+
+        document.body.removeChild(textArea);
+      }
+
+      // ============================================
+      // SCROLL ANIMATIONS
+      // ============================================
+      function setupScrollAnimations() {
+        const observerOptions = {
+          threshold: 0.4, // Changed from 0.1 to 0.25 - element needs to be 25% visible
+          rootMargin: "0px 0px -150px 0px", // Changed from -50px to -100px - triggers later
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        }, observerOptions);
+
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+
+      // ============================================
+      // STICKY NAV SHADOW
+      // ============================================
+      function setupNavScroll() {
+        const nav = document.getElementById("nav");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        });
+      }
+
+      // ============================================
+      // MUSIC CONTROL
+      // ============================================
+      function setupMusicControl() {
+        const musicButton = document.getElementById("musicButton");
+        const backgroundMusic = document.getElementById("backgroundMusic");
+        const mutedIcon = document.getElementById("mutedIcon");
+        const playingIcon = document.getElementById("playingIcon");
+
+        let isPlaying = false;
+        let isFirstPlay = true;
+
+        musicButton.addEventListener("click", () => {
+          if (isPlaying) {
+            // Pause music
+            backgroundMusic.pause();
+            mutedIcon.style.display = "block";
+            playingIcon.style.display = "none";
+            musicButton.classList.remove("playing");
+            isPlaying = false;
+          } else {
+            // Play music
+            if (isFirstPlay) {
+              backgroundMusic.currentTime = 20; // Start at 20 seconds
+              isFirstPlay = false;
+            }
+            backgroundMusic.play().catch((error) => {
+              console.log("Error al reproducir música:", error);
+            });
+            mutedIcon.style.display = "none";
+            playingIcon.style.display = "block";
+            musicButton.classList.add("playing");
+            isPlaying = true;
+          }
+        });
+      }
+
+      // ============================================
+      // GENERATE BANK ACCOUNTS
+      // ============================================
+      function generateBankAccounts() {
+        const container = document.getElementById("bankAccountsContainer");
+        const accountsHTML = CONFIG.giftAccounts
+          .map(
+            (account, index) => `
+          <div class="bank-account-card animate-on-scroll">
+            <h3 class="account-holder-name">${account.name}</h3>
+            <div class="bank-name">${account.bankName}</div>
+            <div class="clabe-section">
+              <div class="clabe-label">CLABE</div>
+              <div class="clabe-row">
+                <div class="clabe-number" id="clabe-${index}">${account.clabe}</div>
+                <button class="copy-icon-button" onclick="copyCLABE('${account.clabe}', ${index})" title="Copiar CLABE">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        `
+          )
+          .join("");
+
+        container.innerHTML = accountsHTML;
+      }
+
+      // ============================================
+      // COPY CLABE TO CLIPBOARD
+      // ============================================
+      function copyCLABE(clabe, index) {
+        const button = event.currentTarget;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard
+            .writeText(clabe)
+            .then(() => {
+              showCopySuccess(button);
+            })
+            .catch(() => {
+              fallbackCopyCLABE(clabe, button);
+            });
+        } else {
+          fallbackCopyCLABE(clabe, button);
+        }
+      }
+
+      function fallbackCopyCLABE(text, button) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        try {
+          document.execCommand("copy");
+          showCopySuccess(button);
+        } catch (err) {
+          alert("No se pudo copiar: " + text);
+        }
+
+        document.body.removeChild(textArea);
+      }
+
+      function showCopySuccess(button) {
+        button.classList.add("copied");
+        button.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+          </svg>
+        `;
+
+        setTimeout(() => {
+          button.classList.remove("copied");
+          button.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="currentColor"/>
+            </svg>
+          `;
+        }, 1500);
+      }
+
+      // ============================================
+      // RSVP FORM LOGIC
+      // ============================================
+      function setupRSVPForm() {
+        // Get URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const guestId = urlParams.get("id");
+
+        const guestGreeting = document.getElementById("guestGreeting");
+        const invalidGuest = document.getElementById("invalidGuest");
+        const rsvpForm = document.getElementById("rsvpForm");
+        const guestNameEl = document.getElementById("guestName");
+        const availableTicketsEl = document.getElementById("availableTickets");
+        const attendanceSelect = document.getElementById("attendance");
+        const ticketsGroup = document.getElementById("ticketsGroup");
+        const ticketsCountSelect = document.getElementById("ticketsCount");
+        const submitBtn = document.getElementById("submitBtn");
+        const loadingState = document.getElementById("loadingState");
+        const successMessage = document.getElementById("successMessage");
+        const successText = document.getElementById("successText");
+
+        let currentGuest = null;
+
+        // Check if guest ID is valid
+        if (guestId && CONFIG.guestMap[guestId]) {
+          currentGuest = CONFIG.guestMap[guestId];
+
+          // Show greeting and form
+          guestNameEl.textContent = currentGuest.fullName;
+          availableTicketsEl.textContent = currentGuest.allowedTickets;
+          guestGreeting.style.display = "block";
+          rsvpForm.style.display = "block";
+
+          // Populate tickets dropdown
+          populateTicketsOptions(currentGuest.allowedTickets);
+        }
+
+        // Handle attendance selection change
+        attendanceSelect.addEventListener("change", function () {
+          if (this.value === "yes") {
+            ticketsGroup.style.display = "block";
+            ticketsCountSelect.required = true;
+          } else {
+            ticketsGroup.style.display = "none";
+            ticketsCountSelect.required = false;
+            ticketsCountSelect.value = ""; // Reset tickets selection
+          }
+          validateForm();
+        });
+
+        // Handle tickets selection change
+        ticketsCountSelect.addEventListener("change", validateForm);
+
+        // Form validation function
+        function validateForm() {
+          const attendance = attendanceSelect.value;
+          const ticketsCount = ticketsCountSelect.value;
+
+          // Enable submit if:
+          // - User selected "no", OR
+          // - User selected "yes" AND selected number of tickets
+          if (
+            attendance === "no" ||
+            (attendance === "yes" && ticketsCount !== "")
+          ) {
+            submitBtn.disabled = false;
+          } else {
+            submitBtn.disabled = true;
+          }
+        }
+
+        // Handle form submission
+        rsvpForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const attendance = attendanceSelect.value;
+          const confirmedTickets =
+            attendance === "yes" ? parseInt(ticketsCountSelect.value) : 0;
+
+          // Prepare data
+          const formData = {
+            id: guestId,
+            asistira: attendance === "yes" ? "Si" : "No",
+            boletos: confirmedTickets,
+          };
+
+          // Show loading state
+          submitBtn.style.display = "none";
+          loadingState.style.display = "flex";
+
+          try {
+            // Send to Google Apps Script
+            const response = await fetch(CONFIG.rsvpEndpoint, {
+              method: "POST",
+              mode: "no-cors",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
+            });
+
+            // Show success message
+            rsvpForm.style.display = "none";
+            guestGreeting.style.display = "none";
+            successMessage.style.display = "block";
+
+            if (attendance === "yes") {
+              successText.textContent = `Hemos confirmado tu asistencia con ${confirmedTickets} boleto${
+                confirmedTickets > 1 ? "s" : ""
+              }. ¡Nos vemos en la boda!`;
+            } else {
+              successText.textContent =
+                "Lamentamos que no puedas asistir. ¡Gracias por avisarnos!";
+            }
+          } catch (error) {
+            console.error("Error submitting RSVP:", error);
+            alert(
+              "Hubo un error al enviar tu confirmación. Por favor intenta de nuevo."
+            );
+            submitBtn.style.display = "block";
+            loadingState.style.display = "none";
+          }
+        });
+      }
+
+      function populateTicketsOptions(maxTickets) {
+        const ticketsCountSelect = document.getElementById("ticketsCount");
+        ticketsCountSelect.innerHTML =
+          '<option value="">Selecciona cantidad</option>';
+
+        for (let i = 1; i <= maxTickets; i++) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = i + " boleto" + (i > 1 ? "s" : "");
+          ticketsCountSelect.appendChild(option);
+        }
+      }
+
+      // Modal simple para imágenes
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Agregar click a todas las imágenes de la galería
+        document.querySelectorAll(".gallery-item img").forEach((img) => {
+          img.onclick = function () {
+            modal.style.display = "flex";
+            modal.classList.add("show");
+            modalImg.src = this.src;
+          };
+        });
+
+        // Cerrar modal al hacer click
+        modal.onclick = function () {
+          modal.style.display = "none";
+          modal.classList.remove("show");
+        };
+      });
+
+      // ============================================
+      // INITIALIZE
+      // ============================================
+      document.addEventListener("DOMContentLoaded", () => {
+        initializePage();
+        setupScrollAnimations();
+        setupNavScroll();
+        setupMusicControl();
+        setupRSVPForm();
+      });
+    </script>
+  </body>
+</html>
