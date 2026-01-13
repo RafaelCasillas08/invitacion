@@ -21,7 +21,8 @@ const guests = rows
     const ticketsRaw = row["Boletos que les dimos"];
     const willAssist = row["Asistirá"];
 
-    if (!id || !fullName || !!willAssist) return null;
+    if (!id || !fullName) return null;
+    // if (!id || !fullName || !!willAssist) return null;
 
     const phone = phoneRaw ? String(phoneRaw).trim() : "";
     const country = countryRaw ? String(countryRaw).trim() : "México";
